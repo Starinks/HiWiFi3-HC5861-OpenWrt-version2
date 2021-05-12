@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git immortalwrt https://github.com/immortalwrt/immortalwrt/tree/openwrt-18.06/package' feeds.conf.default
 
 # 删除旧主题
 rm -rf package/lean/luci-theme-argon
