@@ -17,8 +17,12 @@
 #sed -i '$a src-git immortalwrt https://github.com/immortalwrt/immortalwrt/tree/openwrt-18.06/package' feeds.conf.default
 #src-git packages https://github.com/immortalwrt/immortalwrt/tree/openwrt-18.06/package.git
 
+# 下载新主题
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+
 # 删除旧主题
 rm -rf package/lean/luci-theme-argon
 
-# 下载新主题
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb #git lua-maxminddb 依赖
+
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
