@@ -14,8 +14,6 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git immortalwrt https://github.com/immortalwrt/immortalwrt/tree/openwrt-18.06/package' feeds.conf.default
-#src-git packages https://github.com/immortalwrt/immortalwrt/tree/openwrt-18.06/package.git
 
 # 下载新主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
